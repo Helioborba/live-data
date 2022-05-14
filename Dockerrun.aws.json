@@ -1,0 +1,35 @@
+{
+    "AWSEBDockerrunVersion": "3",
+    "containerDefinitions": [
+        {
+            "name": "client",
+            "image": "borba/liveDataClient",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "app",
+            "image": "borba/liveDataApp",
+            "hostname": "app",
+            "essential": false
+        },
+        {
+            "name": "nginx",
+            "image": "borba/liveDataNginx",
+            "hostname": "nginx",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80
+                }
+            ]
+        },
+        {
+            "name": "mysql",
+            "image": "borba/liveDataMysql",
+            "hostname": "mysql",
+            "essential": false
+        }
+    ]
+}

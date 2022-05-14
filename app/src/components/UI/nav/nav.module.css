@@ -1,0 +1,27 @@
+.active {
+    color: #bbdefb;
+    padding: 0;
+    text-decoration: none;
+}
+
+.notActive {
+    color:#ffffff; /*  trocar cor do texto do botao */
+    text-decoration: none;
+}
+  
+.notActive:visited{ 
+    color:#fff
+}
+  
+.notActive:hover { 
+    text-decoration: none; color:#fff; text-shadow: "1px 1px #000081";
+}
+
+.notActive:focus { 
+    text-decoration: none; color:#fff; text-shadow: "1px 1px #000081";
+}
+
+.notActive:hover, 
+.notActive:active { 
+    text-decoration: none; color:#fff; text-shadow: "1px 1px #000081";
+} 
